@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-06-11T07:18:33.282Z",
+ "generatedAt": "2026-06-11T11:51:11.636Z",
  "station": "VOHS",
- "metar": "METAR VOHS 110700Z 27008KT 6000 FEW020 33/21 Q1009 NOSIG",
+ "metar": "METAR VOHS 111130Z 31006KT 6000 FEW020 SCT025 35/19 Q1006 NOSIG",
  "notams": [
   {
    "notamNumber": "G1277/18",
@@ -334,13 +334,13 @@
    "traditionalMessage": ""
   },
   {
-   "notamNumber": "A1890/26",
+   "notamNumber": "A1913/26",
    "facilityDesignator": "VOHS",
    "featureName": "International",
-   "issueDate": "06/10/2026 1054",
-   "startDate": "06/10/2026 1030",
-   "endDate": "06/11/2026 1230",
-   "icaoMessage": "A1890/26 NOTAMN\r\nQ) VOMF/QFAXX/IV/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2606101030 C) 2606111230\r\nE) REF EAIP INDIA VOHS AD 2.20 LOCAL AD REGULATIONS \r\nPARA 5. AP COLLABORATIVE DECISION MAKING(ACDM) NOT AVBL",
+   "issueDate": "06/11/2026 1016",
+   "startDate": "06/11/2026 1016",
+   "endDate": "06/12/2026 1230",
+   "icaoMessage": "A1913/26 NOTAMR A1890/26\r\nQ) VOMF/QFAXX/IV/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2606111016 C) 2606121230\r\nE) REF EAIP INDIA VOHS AD 2.20 LOCAL AD REGULATIONS \r\nPARA 5. AP COLLABORATIVE DECISION MAKING(ACDM) NOT AVBL",
    "traditionalMessage": ""
   }
  ]
