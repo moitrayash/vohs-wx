@@ -5,10 +5,19 @@ const fs = require('fs');
 const STATION = 'VOHS';
 
 async function getMetar() {
-  const url = `https://aviationweather.gov/api/data/metar?ids=${STATION}&format=raw`;
+  const url = `https://aviationweather.gov/api/data/metar?ids=${STATION}&format=raw&hours=6`;
   const r = await fetch(url, { headers: { 'Accept': 'text/plain' } });
   if (!r.ok) throw new Error('METAR HTTP ' + r.status);
-  return (await r.text()).trim();
+  const lines = (await r.text()).split('\n').map((s) => s.trim()).filter(Boolean);
+  let best = '', bestT = -1, now = Date.now(), d = new Date();
+  for (const ln of lines) {
+    const m = ln.match(/\b(\d{2})(\d{2})(\d{2})Z\b/);
+    if (!ln.includes(STATION) || !m) continue;
+    let t = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), +m[1], +m[2], +m[3]);
+    if (t > now + 3600000) t = Date.UTC(d.getUTCFullYear(), d.getUTCMonth() - 1, +m[1], +m[2], +m[3]);
+    if (t > bestT) { bestT = t; best = ln; }
+  }
+  return best || (lines[0] || '');
 }
 
 async function getNotams() {

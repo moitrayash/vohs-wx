@@ -181,7 +181,7 @@ function agUnlock(){var v=document.getElementById('agPw').value.trim();if(v==='5
     <div>
       <h1 id="appTitle">VIDP: Feathervane</h1>
       <div class="sub">METAR &amp; NOTAMs</div>
-      <div class="proto">Research Prototype · Last fix <span id="lastFix">10 Jun 2026 0819Z</span></div>
+      <div class="proto">Research Prototype · Last fix <span id="lastFix">15 Jun 2026 1253Z</span></div>
     </div>
     <div class="clocks">
       <div class="clock"><div class="lbl">Zulu (UTC)</div><div class="t" id="zTime">--:--:--</div><div class="d" id="zDate">-</div></div>
@@ -446,7 +446,7 @@ const POST_PROXIES = [
 ];
 // Multiple independent METAR sources - if one portal is unreliable or down, the next is tried.
 const METAR_SOURCES = [
-  () => 'https://aviationweather.gov/api/data/metar?ids=' + STATION + '&format=raw',
+  () => 'https://aviationweather.gov/api/data/metar?ids=' + STATION + '&format=raw&hours=6',
   () => 'https://metar.vatsim.net/' + STATION,
   () => 'https://tgftp.nws.noaa.gov/data/observations/metar/stations/' + STATION + '.TXT',
 ];
@@ -462,12 +462,17 @@ async function tryGetText(url){
 // Pull a clean raw METAR line out of any source format (raw, NOAA .TXT date+line, etc.).
 function extractMetar(text){
   const lines = text.split('\n').map(s => s.trim()).filter(Boolean);
-  for(let i = lines.length - 1; i >= 0; i--){
-    const ln = lines[i].replace(/=+\s*$/,'').trim();
-    if(ln.includes(STATION) && /\d{6}Z/.test(ln))
-      return (ln.startsWith('METAR') || ln.startsWith('SPECI')) ? ln : ('METAR ' + ln);
+  let best = null, bestT = -1;
+  for(const raw of lines){
+    const ln = raw.replace(/=+\s*$/,'').trim();
+    const m = ln.match(/\b(\d{2})(\d{2})(\d{2})Z\b/);
+    if(!ln.includes(STATION) || !m) continue;
+    const now = Date.now(), d = new Date();
+    let t = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), +m[1], +m[2], +m[3]);
+    if(t > now + 3600000) t = Date.UTC(d.getUTCFullYear(), d.getUTCMonth()-1, +m[1], +m[2], +m[3]);
+    if(t > bestT){ bestT = t; best = (ln.startsWith('METAR') || ln.startsWith('SPECI')) ? ln : ('METAR ' + ln); }
   }
-  return null;
+  return best;
 }
 async function liveMetar(){
   for(const src of METAR_SOURCES){
