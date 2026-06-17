@@ -1,8 +1,7 @@
 {
- "generatedAt": "2026-06-17T21:33:27.234Z",
+ "generatedAt": "2026-06-17T23:05:05.202Z",
  "station": "VOHS",
- "metar": "",
- "metarError": "Error: METAR HTTP 504",
+ "metar": "METAR VOHS 172300Z 24006KT 6000 FEW020 SCT100 27/19 Q1010 NOSIG",
  "notams": [
   {
    "notamNumber": "G1277/18",
