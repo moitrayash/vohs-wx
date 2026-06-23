@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-06-23T07:59:25.211Z",
+ "generatedAt": "2026-06-23T11:19:31.625Z",
  "station": "VOHS",
- "metar": "METAR VOHS 230730Z 26011G21KT 6000 SCT012 SCT018 BKN080 28/22 Q1010 NOSIG",
+ "metar": "METAR VOHS 231100Z 24010KT 6000 FEW015 SCT025 31/22 Q1007 NOSIG",
  "notams": [
   {
    "notamNumber": "G1277/18",
@@ -341,6 +341,16 @@
    "startDate": "05/22/2026 0930",
    "endDate": "06/25/2026 1230",
    "icaoMessage": "A1707/26 NOTAMR A1438/26\r\nQ) VOMF/QMXXX/IV/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2605220930 C) 2606251230\r\nE) TWY B1 AVBL UPTO CODE C OPS UNDER TOWING AND\r\nFLW ME GUIDANCE WITH ONE HOUR MNM PRIOR NOTICE.",
+   "traditionalMessage": ""
+  },
+  {
+   "notamNumber": "A2003/26",
+   "facilityDesignator": "VOHS",
+   "featureName": "International",
+   "issueDate": "06/23/2026 1102",
+   "startDate": "06/24/2026 0330",
+   "endDate": "06/24/2026 1230",
+   "icaoMessage": "A2003/26 NOTAMN\r\nQ) VOMF/QMRXX/IV/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2606240330 C) 2606241230\r\nE) WIP AT A DIST OF 75M NORTH OF RWY 09L/27R CL AND EAST\r\nOF TWY A GRADED AREA.MAX EQPT HGT WILL BE 2.5M.\r\nPILOT EXER CTN.",
    "traditionalMessage": ""
   }
  ]
