@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-06-23T04:16:30.561Z",
+ "generatedAt": "2026-06-23T07:59:25.211Z",
  "station": "VOHS",
- "metar": "METAR VOHS 230400Z 25010KT 5000 BR SCT010 SCT015 BKN080 26/22 Q1012 NOSIG",
+ "metar": "METAR VOHS 230730Z 26011G21KT 6000 SCT012 SCT018 BKN080 28/22 Q1010 NOSIG",
  "notams": [
   {
    "notamNumber": "G1277/18",
@@ -341,16 +341,6 @@
    "startDate": "05/22/2026 0930",
    "endDate": "06/25/2026 1230",
    "icaoMessage": "A1707/26 NOTAMR A1438/26\r\nQ) VOMF/QMXXX/IV/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2605220930 C) 2606251230\r\nE) TWY B1 AVBL UPTO CODE C OPS UNDER TOWING AND\r\nFLW ME GUIDANCE WITH ONE HOUR MNM PRIOR NOTICE.",
-   "traditionalMessage": ""
-  },
-  {
-   "notamNumber": "A1988/26",
-   "facilityDesignator": "VOHS",
-   "featureName": "International",
-   "issueDate": "06/22/2026 0731",
-   "startDate": "06/22/2026 0730",
-   "endDate": "06/23/2026 0700",
-   "icaoMessage": "A1988/26 NOTAMN\r\nQ) VOMF/QFDAS/I/NBO/A/000/999/1714N07826E005\r\nA) VOHS B) 2606220730 C) 2606230700\r\nE) VISUAL DCKG GUIDANCE SYSTEM FOR STAND 58R NOT AVBL FOR OPS. \r\nPILOTS TO FLW MARSHALLER FOR PRKG GUIDANCE",
    "traditionalMessage": ""
   }
  ]
