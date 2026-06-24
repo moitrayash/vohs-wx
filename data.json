@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-06-24T10:46:30.758Z",
+ "generatedAt": "2026-06-24T13:07:30.398Z",
  "station": "VOHS",
- "metar": "METAR VOHS 241030Z 25008KT 6000 SCT015 SCT025 FEW030TCU 30/21 Q1006 NOSIG",
+ "metar": "METAR VOHS 241300Z 29006KT 6000 SCT015 FEW030CB BKN080 29/22 Q1007 TEMPO 5000 RA",
  "notams": [
   {
    "notamNumber": "G1277/18",
@@ -284,6 +284,36 @@
    "traditionalMessage": ""
   },
   {
+   "notamNumber": "A2012/26",
+   "facilityDesignator": "VOHS",
+   "featureName": "International",
+   "issueDate": "06/24/2026 1225",
+   "startDate": "06/24/2026 1225",
+   "endDate": "07/31/2026 1230",
+   "icaoMessage": "A2012/26 NOTAMR A1706/26\r\nQ) VOMF/QMRXX/IV/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2606241225 C) 2607311230\r\nE) WIP AT DIST OF 110M NORTH OF RWY 09L/27R CL BTN TWY B1\r\nAND TWY B2. MAX EQPT HGT WILL BE 2.5M. PILOTS TO EXER CTN",
+   "traditionalMessage": ""
+  },
+  {
+   "notamNumber": "A2013/26",
+   "facilityDesignator": "VOHS",
+   "featureName": "International",
+   "issueDate": "06/24/2026 1226",
+   "startDate": "06/24/2026 1225",
+   "endDate": "07/31/2026 1230",
+   "icaoMessage": "A2013/26 NOTAMR A1707/26\r\nQ) VOMF/QMXXX/IV/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2606241225 C) 2607311230\r\nE) TWY B1 AVBL UPTO CODE C OPS UNDER TOWING AND\r\nFLW ME GUIDANCE WITH ONE HOUR MNM PRIOR NOTICE",
+   "traditionalMessage": ""
+  },
+  {
+   "notamNumber": "A2014/26",
+   "facilityDesignator": "VOHS",
+   "featureName": "International",
+   "issueDate": "06/24/2026 1228",
+   "startDate": "06/24/2026 1230",
+   "endDate": "07/31/2026 1230",
+   "icaoMessage": "A2014/26 NOTAMR A1705/26\r\nQ) VOMF/QFAXX/IV/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2606241230 C) 2607311230\r\nE) REF E-AIP INDIA VOHS AD 2.20 LOCAL AD REGULATIONS PARA 4 \r\nSUB PARA 4.2. TWY B1 NOT AVBL AS AN ALTN ISOLATION PRKG \r\nPSN DUE WIP",
+   "traditionalMessage": ""
+  },
+  {
    "notamNumber": "A1770/26",
    "facilityDesignator": "VOHS",
    "featureName": "International",
@@ -311,46 +341,6 @@
    "startDate": "03/30/2026 1115",
    "endDate": "06/30/2026 1230",
    "icaoMessage": "A1122/26 NOTAMR A4113/25\nQ) VOMF/QMRXX/IV/BO/A/000/999/1714N07826E005\nA) VOHS B) 2603301115 C) 2606301230\nE) RWY09L IS NON PRECISION DUE WIP \nALONG THE DRAIN IN BASIC STRIP.",
-   "traditionalMessage": ""
-  },
-  {
-   "notamNumber": "A1705/26",
-   "facilityDesignator": "VOHS",
-   "featureName": "International",
-   "issueDate": "05/22/2026 0931",
-   "startDate": "05/22/2026 0930",
-   "endDate": "06/25/2026 1230",
-   "icaoMessage": "A1705/26 NOTAMR A1361/26\r\nQ) VOMF/QFAXX/IV/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2605220930 C) 2606251230\r\nE) REF E-AIP INDIA VOHS AD 2.20 LOCAL AD REGULATIONS PARA 4 SUB PARA \r\n4.2. TWY B1 NOT AVBL AS AN ALTN ISOLATION PRKG PSN DUE WIP",
-   "traditionalMessage": ""
-  },
-  {
-   "notamNumber": "A1706/26",
-   "facilityDesignator": "VOHS",
-   "featureName": "International",
-   "issueDate": "05/22/2026 0932",
-   "startDate": "05/22/2026 0930",
-   "endDate": "06/25/2026 1230",
-   "icaoMessage": "A1706/26 NOTAMR A1437/26\r\nQ) VOMF/QMRXX/IV/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2605220930 C) 2606251230\r\nE) WIP AT DIST OF 110M NORTH OF RWY 09L/27R CL BTN TWY B1\r\nAND TWY B2.MAX EQPT HGT WILL BE 2.5M.PILOTS TO EXER CTN.",
-   "traditionalMessage": ""
-  },
-  {
-   "notamNumber": "A1707/26",
-   "facilityDesignator": "VOHS",
-   "featureName": "International",
-   "issueDate": "05/22/2026 0933",
-   "startDate": "05/22/2026 0930",
-   "endDate": "06/25/2026 1230",
-   "icaoMessage": "A1707/26 NOTAMR A1438/26\r\nQ) VOMF/QMXXX/IV/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2605220930 C) 2606251230\r\nE) TWY B1 AVBL UPTO CODE C OPS UNDER TOWING AND\r\nFLW ME GUIDANCE WITH ONE HOUR MNM PRIOR NOTICE.",
-   "traditionalMessage": ""
-  },
-  {
-   "notamNumber": "A2003/26",
-   "facilityDesignator": "VOHS",
-   "featureName": "International",
-   "issueDate": "06/23/2026 1102",
-   "startDate": "06/24/2026 0330",
-   "endDate": "06/24/2026 1230",
-   "icaoMessage": "A2003/26 NOTAMN\r\nQ) VOMF/QMRXX/IV/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2606240330 C) 2606241230\r\nE) WIP AT A DIST OF 75M NORTH OF RWY 09L/27R CL AND EAST\r\nOF TWY A GRADED AREA.MAX EQPT HGT WILL BE 2.5M.\r\nPILOT EXER CTN.",
    "traditionalMessage": ""
   }
  ]
