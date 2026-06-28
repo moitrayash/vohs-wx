@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-06-28T00:17:38.269Z",
+ "generatedAt": "2026-06-28T04:54:51.238Z",
  "station": "VOHS",
- "metar": "METAR VOHS 280000Z 24005KT 5000 BR SCT015 BKN080 24/23 Q1008 NOSIG",
+ "metar": "METAR VOHS 280430Z 29012KT 6000 FEW015 SCT025 29/24 Q1010 NOSIG",
  "notams": [
   {
    "notamNumber": "G1277/18",
@@ -341,6 +341,16 @@
    "startDate": "03/30/2026 1115",
    "endDate": "06/30/2026 1230",
    "icaoMessage": "A1122/26 NOTAMR A4113/25\nQ) VOMF/QMRXX/IV/BO/A/000/999/1714N07826E005\nA) VOHS B) 2603301115 C) 2606301230\nE) RWY09L IS NON PRECISION DUE WIP \nALONG THE DRAIN IN BASIC STRIP.",
+   "traditionalMessage": ""
+  },
+  {
+   "notamNumber": "A2032/26",
+   "facilityDesignator": "VOHS",
+   "featureName": "International",
+   "issueDate": "06/28/2026 0300",
+   "startDate": "06/28/2026 0300",
+   "endDate": "06/28/2026 0630",
+   "icaoMessage": "A2032/26 NOTAMN\r\nQ) VOMF/QFDAS/I/NBO/A/000/999/1714N07826E005\r\nA) VOHS B) 2606280300 C) 2606280630\r\nE) VISUAL DCKG GUIDANCE SYSTEM FOR STAND 50 NOT AVBL FOR OPS. \r\nPILOTS TO FLW MARSHALLER FOR PRKG GUIDANCE",
    "traditionalMessage": ""
   }
  ]
