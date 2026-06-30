@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-06-29T23:17:59.391Z",
+ "generatedAt": "2026-06-30T01:27:21.842Z",
  "station": "VOHS",
- "metar": "METAR VOHS 292300Z 27012KT 5000 BR SCT020 BKN080 24/21 Q1008 NOSIG",
+ "metar": "METAR VOHS 300100Z 27014KT 5000 BR SCT010 BKN020 BKN080 24/21 Q1009 NOSIG",
  "notams": [
   {
    "notamNumber": "G1277/18",
@@ -254,6 +254,16 @@
    "traditionalMessage": ""
   },
   {
+   "notamNumber": "A2052/26",
+   "facilityDesignator": "VOHS",
+   "featureName": "International",
+   "issueDate": "06/30/2026 0006",
+   "startDate": "06/30/2026 0000",
+   "endDate": "09/28/2026 2359",
+   "icaoMessage": "A2052/26 NOTAMR A1936/26\r\nQ) VOMF/QFAXX/IV/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2606300000 C) 2609282359\r\nD) 0000-1730 2330-2359\r\nE) REF EAIP INDIA VOHS AD 2.20 LOCAL AD REGULATIONS \r\nPARA 5. AP COLLABORATIVE DECISION MAKING(ACDM) WILL\r\nBE IN PLACE. ACFT OPR TO UPDATE TARGET OFF BLOCK TIME(TOBT)\r\nAND ADHERE TO TARGET START UP APPROVAL TIME(TSAT)",
+   "traditionalMessage": ""
+  },
+  {
    "notamNumber": "A1821/26",
    "facilityDesignator": "VOHS",
    "featureName": "International",
@@ -331,16 +341,6 @@
    "startDate": "05/29/2026 1245",
    "endDate": "07/03/2026 1230",
    "icaoMessage": "A1770/26 NOTAMR A1482/26\r\nQ) VOMF/QFDAS/IV/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2605291245 C) 2607031230\r\nE) VISUAL DCKG GUIDANCE SYSTEM FOR STANDS 44,45,46,47,48\r\nNOT AVBL FOR OPS.PILOTS TO FLW MARSHALLER FOR PRKG GUIDANCE",
-   "traditionalMessage": ""
-  },
-  {
-   "notamNumber": "A1936/26",
-   "facilityDesignator": "VOHS",
-   "featureName": "International",
-   "issueDate": "06/15/2026 1316",
-   "startDate": "06/15/2026 0000",
-   "endDate": "07/01/2026 2359",
-   "icaoMessage": "A1936/26 NOTAMN\r\nQ) VOMF/QFAXX/IV/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2606150000 C) 2607012359\r\nD) 0000-1730 2330-2359\r\nE) REF EAIP INDIA VOHS AD 2.20 LOCAL AD REGULATIONS \r\nPARA 5. AP COLLABORATIVE DECISION MAKING(ACDM) WILL\r\nBE IN PLACE. ACFT OPR TO UPDATE TARGET OFF BLOCK TIME(TOBT)\r\nAND ADHERE TO TARGET START UP APPROVAL TIME(TSAT)",
    "traditionalMessage": ""
   }
  ]
