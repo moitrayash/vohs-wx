@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-07-02T10:20:59.488Z",
+ "generatedAt": "2026-07-02T12:25:12.586Z",
  "station": "VOHS",
- "metar": "METAR VOHS 021000Z 27012G22KT 6000 SCT015 BKN080 29/21 Q1007 NOSIG",
+ "metar": "METAR VOHS 021200Z 27014G24KT 6000 SCT015 BKN100 30/20 Q1006 NOSIG",
  "notams": [
   {
    "notamNumber": "G1277/18",
@@ -224,16 +224,6 @@
    "traditionalMessage": ""
   },
   {
-   "notamNumber": "G0461/26",
-   "facilityDesignator": "VOHS",
-   "featureName": "International",
-   "issueDate": "04/07/2026 0450",
-   "startDate": "04/07/2026 0448",
-   "endDate": "07/04/2026 2359EST",
-   "icaoMessage": "G0461/26 NOTAMR G0032/26\nQ) VOMF/QISAS/I/NBO/A/000/999/1714N07826E005\nA) VOHS B) 2604070448 C) 2607042359 EST\nE) ILS RWY 27L IDENT ISAM (LOC 110.900MHZ, GP 330.800MHZ, DME ISAM\nCH46X) NOT AVBL DUE EQPT REPLACEMENT.",
-   "traditionalMessage": ""
-  },
-  {
    "notamNumber": "G0467/26",
    "facilityDesignator": "VOHS",
    "featureName": "International",
@@ -241,6 +231,16 @@
    "startDate": "04/07/2026 0952",
    "endDate": "07/05/2026 2359EST",
    "icaoMessage": "G0467/26 NOTAMR G0034/26\nQ) VOMF/QPIAW/I/NBO/A/000/999/1714N07826E005\nA) VOHS B) 2604070952 C) 2607052359 EST\nE) REF EAIP INDIA PAGE AD VOHS 2-109 DATED 17 APR 2025 REGARDING ILS\nOR\nLOC RWY 27L PROC OF SHAMSHABAD (VOHS) AP. ILS OR LOC RWY 27L PROC\nTEMPO WITHDRAWN DUE EQPT REPLACEMENT.",
+   "traditionalMessage": ""
+  },
+  {
+   "notamNumber": "G0763/26",
+   "facilityDesignator": "VOHS",
+   "featureName": "International",
+   "issueDate": "07/02/2026 1121",
+   "startDate": "07/02/2026 1121",
+   "endDate": "10/02/2026 2359EST",
+   "icaoMessage": "G0763/26 NOTAMR G0461/26\r\nQ) VOMF/QISAS/I/NBO/A/000/999/1714N07826E005\r\nA) VOHS B) 2607021121 C) 2610022359EST\r\nE) ILS RWY 27L IDENT ISAM (LOC 110.900MHZ, GP 330.800MHZ, DME ISAM\r\nCH46X) NOT AVBL DUE EQPT REPLACEMENT.",
    "traditionalMessage": ""
   },
   {
