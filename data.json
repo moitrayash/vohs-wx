@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-07-06T04:43:11.914Z",
+ "generatedAt": "2026-07-06T08:51:20.251Z",
  "station": "VOHS",
- "metar": "METAR VOHS 060430Z 25015G25KT 6000 SCT010 BKN015 OVC080 27/22 Q1007 NOSIG",
+ "metar": "METAR VOHS 060830Z 25015G25KT 6000 FEW010 BKN015 BKN080 31/21 Q1004 NOSIG",
  "notams": [
   {
    "notamNumber": "G1277/18",
@@ -164,16 +164,6 @@
    "traditionalMessage": ""
   },
   {
-   "notamNumber": "G0072/26",
-   "facilityDesignator": "VOHS",
-   "featureName": "International",
-   "issueDate": "01/21/2026 1153",
-   "startDate": "01/21/2026 1149",
-   "endDate": "PERM",
-   "icaoMessage": "G0072/26 NOTAMN\nQ) VOMF/QPICH/I/NBO/A/000/999/1714N07826E005\nA) VOHS B) 2601211149 C) PERM\nE) REF EAIP INDIA PAGE AD 2 VOHS 2-109 DATED 17 APR 2025 REGARDING\nILS OR LOC RWY 27L OF SHAMSHABAD AIRPORT:\nTHE CIRCLING OCA(H) IS DELETED FROM IAP CHART.\nAMEND EAIP ACCORDINGLY.",
-   "traditionalMessage": ""
-  },
-  {
    "notamNumber": "G0073/26",
    "facilityDesignator": "VOHS",
    "featureName": "International",
@@ -224,16 +214,6 @@
    "traditionalMessage": ""
   },
   {
-   "notamNumber": "G0467/26",
-   "facilityDesignator": "VOHS",
-   "featureName": "International",
-   "issueDate": "04/07/2026 0955",
-   "startDate": "04/07/2026 0952",
-   "endDate": "07/05/2026 2359EST",
-   "icaoMessage": "G0467/26 NOTAMR G0034/26\nQ) VOMF/QPIAW/I/NBO/A/000/999/1714N07826E005\nA) VOHS B) 2604070952 C) 2607052359 EST\nE) REF EAIP INDIA PAGE AD VOHS 2-109 DATED 17 APR 2025 REGARDING ILS\nOR\nLOC RWY 27L PROC OF SHAMSHABAD (VOHS) AP. ILS OR LOC RWY 27L PROC\nTEMPO WITHDRAWN DUE EQPT REPLACEMENT.",
-   "traditionalMessage": ""
-  },
-  {
    "notamNumber": "G0763/26",
    "facilityDesignator": "VOHS",
    "featureName": "International",
@@ -241,6 +221,16 @@
    "startDate": "07/02/2026 1121",
    "endDate": "10/02/2026 2359EST",
    "icaoMessage": "G0763/26 NOTAMR G0461/26\r\nQ) VOMF/QISAS/I/NBO/A/000/999/1714N07826E005\r\nA) VOHS B) 2607021121 C) 2610022359EST\r\nE) ILS RWY 27L IDENT ISAM (LOC 110.900MHZ, GP 330.800MHZ, DME ISAM\r\nCH46X) NOT AVBL DUE EQPT REPLACEMENT.",
+   "traditionalMessage": ""
+  },
+  {
+   "notamNumber": "G0766/26",
+   "facilityDesignator": "VOHS",
+   "featureName": "International",
+   "issueDate": "07/06/2026 0610",
+   "startDate": "07/06/2026 0610",
+   "endDate": "PERM",
+   "icaoMessage": "G0766/26 NOTAMR G0467/26\r\nQ) VOMF/QPIAW/I/NBO/A/000/999/1714N07826E005\r\nA) VOHS B) 2607060610 C) PERM\r\nE) REF EAIP INDIA PAGE AD VOHS 2-109 DATED 17 APR 2025 REGARDING ILS\r\nOR\r\nLOC RWY 27L PROC OF SHAMSHABAD (VOHS) AP. ILS OR LOC RWY 27L PROC\r\nWITHDRAWN.",
    "traditionalMessage": ""
   },
   {
