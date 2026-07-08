@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-07-08T10:49:34.296Z",
+ "generatedAt": "2026-07-08T12:08:38.951Z",
  "station": "VOHS",
- "metar": "METAR VOHS 081030Z 25015G25KT 6000 SCT010 BKN015 30/22 Q1005 NOSIG",
+ "metar": "METAR VOHS 081200Z 25009G19KT 5000 -RA SCT010 BKN080 30/22 Q1005 NOSIG",
  "notams": [
   {
    "notamNumber": "G1277/18",
@@ -331,6 +331,16 @@
    "startDate": "07/02/2026 1301",
    "endDate": "07/31/2026 1230",
    "icaoMessage": "A2081/26 NOTAMR A1770/26\r\nQ) VOMF/QFDAS/IV/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2607021301 C) 2607311230\r\nE) VISUAL DCKG GUIDANCE SYSTEM FOR STANDS 44,45,46,47,48\r\nNOT AVBL FOR OPS.PILOTS TO FLW MARSHALLER FOR PRKG GUIDANCE",
+   "traditionalMessage": ""
+  },
+  {
+   "notamNumber": "A2113/26",
+   "facilityDesignator": "VOHS",
+   "featureName": "International",
+   "issueDate": "07/08/2026 1108",
+   "startDate": "07/09/2026 0430",
+   "endDate": "07/12/2026 1230",
+   "icaoMessage": "A2113/26 NOTAMN\r\nQ) VOMF/QMPLC/IV/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2607090430 C) 2607121230\r\nE) ACFT PRKG STANDS 67 TO 69 NOT AVBL",
    "traditionalMessage": ""
   }
  ]
