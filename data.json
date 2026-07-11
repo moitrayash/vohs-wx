@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-07-11T00:10:58.074Z",
+ "generatedAt": "2026-07-11T03:43:43.550Z",
  "station": "VOHS",
- "metar": "METAR VOHS 110000Z 26010KT 6000 FEW015 SCT100 24/21 Q1010 NOSIG",
+ "metar": "METAR VOHS 110330Z 28014KT 6000 SCT020 27/21 Q1012 NOSIG",
  "notams": [
   {
    "notamNumber": "G1277/18",
@@ -331,6 +331,16 @@
    "startDate": "07/02/2026 1301",
    "endDate": "07/31/2026 1230",
    "icaoMessage": "A2081/26 NOTAMR A1770/26\r\nQ) VOMF/QFDAS/IV/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2607021301 C) 2607311230\r\nE) VISUAL DCKG GUIDANCE SYSTEM FOR STANDS 44,45,46,47,48\r\nNOT AVBL FOR OPS.PILOTS TO FLW MARSHALLER FOR PRKG GUIDANCE",
+   "traditionalMessage": ""
+  },
+  {
+   "notamNumber": "A2150/26",
+   "facilityDesignator": "VOHS",
+   "featureName": "International",
+   "issueDate": "07/11/2026 0232",
+   "startDate": "07/11/2026 0730",
+   "endDate": "07/11/2026 1230",
+   "icaoMessage": "A2150/26 NOTAMN\r\nQ) VOMF/QICXX/IV/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2607110730 C) 2607111230\r\nE) ILS RWY27L ISAM FREQ 110.900MHZ COMMISSIONING CLBR WIP.\r\nACFT TO EXP DLA",
    "traditionalMessage": ""
   }
  ]
