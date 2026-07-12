@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-07-12T08:36:17.160Z",
+ "generatedAt": "2026-07-12T10:12:08.206Z",
  "station": "VOHS",
- "metar": "METAR VOHS 120800Z 28017G27KT 6000 SCT020 SCT025 31/19 Q1008 NOSIG",
+ "metar": "METAR VOHS 121000Z 29015KT 6000 SCT020 33/19 Q1006 NOSIG",
  "notams": [
   {
    "notamNumber": "G1277/18",
@@ -231,16 +231,6 @@
    "startDate": "07/06/2026 0610",
    "endDate": "PERM",
    "icaoMessage": "G0766/26 NOTAMR G0467/26\r\nQ) VOMF/QPIAW/I/NBO/A/000/999/1714N07826E005\r\nA) VOHS B) 2607060610 C) PERM\r\nE) REF EAIP INDIA PAGE AD VOHS 2-109 DATED 17 APR 2025 REGARDING ILS\r\nOR\r\nLOC RWY 27L PROC OF SHAMSHABAD (VOHS) AP. ILS OR LOC RWY 27L PROC\r\nWITHDRAWN.",
-   "traditionalMessage": ""
-  },
-  {
-   "notamNumber": "A2156/26",
-   "facilityDesignator": "VOHS",
-   "featureName": "International",
-   "issueDate": "07/12/2026 0637",
-   "startDate": "07/12/2026 0730",
-   "endDate": "07/12/2026 1130EST",
-   "icaoMessage": "A2156/26 NOTAMN\r\nQ) VOMF/QNMAS/IV/BO/AE/000/999/1714N07824E200\r\nA) VOHS B) 2607120730 C) 2607121130EST\r\nE) DVOR/DME HIA 113.800MHZ/CH85X NOT AVBL DUE FLT CLBR",
    "traditionalMessage": ""
   },
   {
