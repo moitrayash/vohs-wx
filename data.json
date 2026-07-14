@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-07-14T09:29:49.733Z",
+ "generatedAt": "2026-07-14T11:07:32.807Z",
  "station": "VOHS",
- "metar": "METAR VOHS 140900Z 33012KT 6000 FEW020 SCT100 32/17 Q1009 NOSIG",
+ "metar": "METAR VOHS 141100Z 32012KT 6000 FEW020 SCT100 33/17 Q1008 NOSIG",
  "notams": [
   {
    "notamNumber": "G1277/18",
