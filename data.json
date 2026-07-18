@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-07-18T11:31:22.743Z",
+ "generatedAt": "2026-07-18T12:31:33.350Z",
  "station": "VOHS",
- "metar": "METAR VOHS 181100Z 29012KT 5000 HZ SCT015 FEW030CB BKN080 29/20 Q1008 NOSIG",
+ "metar": "METAR VOHS 181200Z 32012G22KT 5000 BR SCT015 FEW030CB BKN080 26/22 Q1009 NOSIG",
  "notams": [
   {
    "notamNumber": "G1277/18",
@@ -351,26 +351,6 @@
    "startDate": "07/02/2026 1301",
    "endDate": "07/31/2026 1230",
    "icaoMessage": "A2081/26 NOTAMR A1770/26\r\nQ) VOMF/QFDAS/IV/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2607021301 C) 2607311230\r\nE) VISUAL DCKG GUIDANCE SYSTEM FOR STANDS 44,45,46,47,48\r\nNOT AVBL FOR OPS.PILOTS TO FLW MARSHALLER FOR PRKG GUIDANCE",
-   "traditionalMessage": ""
-  },
-  {
-   "notamNumber": "A2175/26",
-   "facilityDesignator": "VOHS",
-   "featureName": "International",
-   "issueDate": "07/14/2026 0616",
-   "startDate": "07/15/2026 0430",
-   "endDate": "07/18/2026 1230",
-   "icaoMessage": "A2175/26 NOTAMN\r\nQ) VOMF/QMPLC/IV/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2607150430 C) 2607181230\r\nE) ACFT PRKG STANDS 67 TO 69 NOT AVBL FOR OPS",
-   "traditionalMessage": ""
-  },
-  {
-   "notamNumber": "A2176/26",
-   "facilityDesignator": "VOHS",
-   "featureName": "International",
-   "issueDate": "07/14/2026 0620",
-   "startDate": "07/15/2026 0430",
-   "endDate": "07/18/2026 1230",
-   "icaoMessage": "A2176/26 NOTAMN\r\nQ) VOMF/QMXLC/IV/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2607150430 C) 2607181230\r\nE) PORTION OF TWY M2 ABM STANDS 67 TO 69 NOT AVBL FOR OPS. \r\nACFT ON STAND 66 TO DEEP PUSHBACK ON TO TWY M3 AND PULL\r\nFORWARD FACING WEST ABM TEMPO TUG DISCONNECT POINT LOCATED\r\nWEST OF STAND 66 ON TWY M2 FOR ENG START.PILOT TO EXER CTN",
    "traditionalMessage": ""
   }
  ]
