@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-07-27T08:22:16.722Z",
+ "generatedAt": "2026-07-27T11:47:36.027Z",
  "station": "VOHS",
- "metar": "METAR VOHS 270800Z 27015G25KT 5000 BR SCT010 SCT015 BKN080 27/23 Q1008 NOSIG",
+ "metar": "METAR VOHS 271130Z 24010KT 5000 HZ SCT015 BKN100 28/23 Q1005 NOSIG",
  "notams": [
   {
    "notamNumber": "G1277/18",
@@ -271,6 +271,86 @@
    "startDate": "06/30/2026 0000",
    "endDate": "09/28/2026 2359",
    "icaoMessage": "A2052/26 NOTAMR A1936/26\r\nQ) VOMF/QFAXX/IV/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2606300000 C) 2609282359\r\nD) 0000-1730 2330-2359\r\nE) REF EAIP INDIA VOHS AD 2.20 LOCAL AD REGULATIONS \r\nPARA 5. AP COLLABORATIVE DECISION MAKING(ACDM) WILL\r\nBE IN PLACE. ACFT OPR TO UPDATE TARGET OFF BLOCK TIME(TOBT)\r\nAND ADHERE TO TARGET START UP APPROVAL TIME(TSAT)",
+   "traditionalMessage": ""
+  },
+  {
+   "notamNumber": "G0872/26",
+   "facilityDesignator": "VOHS",
+   "featureName": "International",
+   "issueDate": "07/27/2026 0832",
+   "startDate": "09/03/2026 0000",
+   "endDate": "09/16/2026 2359",
+   "icaoMessage": "G0872/26 NOTAMN\r\nQ) VOMF/QPITT/I/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2609030000 C) 2609162359\r\nE) TRIGGER NOTAM - AIRAC AIP SUP 140/2026 WEF 03 SEP 2026.\r\nINSTRUMENT APPROACH CHART - ILS RWY 09L.",
+   "traditionalMessage": ""
+  },
+  {
+   "notamNumber": "G0873/26",
+   "facilityDesignator": "VOHS",
+   "featureName": "International",
+   "issueDate": "07/27/2026 0834",
+   "startDate": "09/03/2026 0000",
+   "endDate": "09/16/2026 2359",
+   "icaoMessage": "G0873/26 NOTAMN\r\nQ) VOMF/QPITT/I/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2609030000 C) 2609162359\r\nE) TRIGGER NOTAM - AIRAC AIP SUP 141/2026 WEF 03 SEP 2026.\r\nINSTRUMENT APPROACH CHART - VOR RWY 09L.",
+   "traditionalMessage": ""
+  },
+  {
+   "notamNumber": "G0874/26",
+   "facilityDesignator": "VOHS",
+   "featureName": "International",
+   "issueDate": "07/27/2026 0836",
+   "startDate": "09/03/2026 0000",
+   "endDate": "09/16/2026 2359",
+   "icaoMessage": "G0874/26 NOTAMN\r\nQ) VOMF/QPITT/I/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2609030000 C) 2609162359\r\nE) TRIGGER NOTAM - AIRAC AIP SUP 142/2026 WEF 03 SEP 2026.\r\nINSTRUMENT APPROACH CHART - VOR RWY 09R.",
+   "traditionalMessage": ""
+  },
+  {
+   "notamNumber": "G0875/26",
+   "facilityDesignator": "VOHS",
+   "featureName": "International",
+   "issueDate": "07/27/2026 0840",
+   "startDate": "09/03/2026 0000",
+   "endDate": "09/16/2026 2359",
+   "icaoMessage": "G0875/26 NOTAMN\r\nQ) VOMF/QPITT/I/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2609030000 C) 2609162359\r\nE) TRIGGER NOTAM - AIRAC AIP SUP 143/2026 WEF 03 SEP 2026.\r\nINSTRUMENT APPROACH CHART - VOR RWY 27L.",
+   "traditionalMessage": ""
+  },
+  {
+   "notamNumber": "G0876/26",
+   "facilityDesignator": "VOHS",
+   "featureName": "International",
+   "issueDate": "07/27/2026 0841",
+   "startDate": "09/03/2026 0000",
+   "endDate": "09/16/2026 2359",
+   "icaoMessage": "G0876/26 NOTAMN\r\nQ) VOMF/QPITT/I/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2609030000 C) 2609162359\r\nE) TRIGGER NOTAM - AIRAC AIP SUP 144/2026 WEF 03 SEP 2026.\r\nINSTRUMENT APPROACH CHART - VOR RWY 27R.",
+   "traditionalMessage": ""
+  },
+  {
+   "notamNumber": "G0877/26",
+   "facilityDesignator": "VOHS",
+   "featureName": "International",
+   "issueDate": "07/27/2026 0843",
+   "startDate": "09/03/2026 0000",
+   "endDate": "09/16/2026 2359",
+   "icaoMessage": "G0877/26 NOTAMN\r\nQ) VOMF/QPITT/I/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2609030000 C) 2609162359\r\nE) TRIGGER NOTAM - AIRAC AIP SUP 145/2026 WEF 03 SEP 2026.\r\nINSTRUMENT APPROACH CHART - RNP Y RWY 09L.",
+   "traditionalMessage": ""
+  },
+  {
+   "notamNumber": "G0878/26",
+   "facilityDesignator": "VOHS",
+   "featureName": "International",
+   "issueDate": "07/27/2026 0844",
+   "startDate": "09/03/2026 0000",
+   "endDate": "09/16/2026 2359",
+   "icaoMessage": "G0878/26 NOTAMN\r\nQ) VOMF/QPITT/I/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2609030000 C) 2609162359\r\nE) TRIGGER NOTAM - AIRAC AIP SUP 146/2026 WEF 03 SEP 2026.\r\nINSTRUMENT APPROACH CHART - RNP Y RWY 27L.",
+   "traditionalMessage": ""
+  },
+  {
+   "notamNumber": "G0879/26",
+   "facilityDesignator": "VOHS",
+   "featureName": "International",
+   "issueDate": "07/27/2026 0846",
+   "startDate": "09/03/2026 0000",
+   "endDate": "09/16/2026 2359",
+   "icaoMessage": "G0879/26 NOTAMN\r\nQ) VOMF/QPITT/I/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2609030000 C) 2609162359\r\nE) TRIGGER NOTAM - AIRAC AIP SUP 147/2026 WEF 03 SEP 2026.\r\nINSTRUMENT APPROACH CHART - RNP Y RWY 27R.",
    "traditionalMessage": ""
   },
   {
