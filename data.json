@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-07-28T10:03:38.446Z",
+ "generatedAt": "2026-07-28T12:06:03.967Z",
  "station": "VOHS",
- "metar": "METAR VOHS 280930Z 26014G24KT 5000 HZ SCT010 SCT015 BKN080 29/23 Q1005 NOSIG",
+ "metar": "METAR VOHS 281200Z 25008G18KT 5000 BR SCT010 SCT015 BKN080 28/23 Q1004 NOSIG",
  "notams": [
   {
    "notamNumber": "G1277/18",
@@ -441,6 +441,26 @@
    "startDate": "07/02/2026 1301",
    "endDate": "07/31/2026 1230",
    "icaoMessage": "A2081/26 NOTAMR A1770/26\r\nQ) VOMF/QFDAS/IV/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2607021301 C) 2607311230\r\nE) VISUAL DCKG GUIDANCE SYSTEM FOR STANDS 44,45,46,47,48\r\nNOT AVBL FOR OPS.PILOTS TO FLW MARSHALLER FOR PRKG GUIDANCE",
+   "traditionalMessage": ""
+  },
+  {
+   "notamNumber": "A2350/26",
+   "facilityDesignator": "VOHS",
+   "featureName": "International",
+   "issueDate": "07/28/2026 1138",
+   "startDate": "07/29/2026 0530",
+   "endDate": "07/29/2026 0930",
+   "icaoMessage": "A2350/26 NOTAMN\r\nQ) VOMF/QMPLC/IV/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2607290530 C) 2607290930\r\nD) 0530-0930\r\nE) ACFT PRKG STANDS 3 TO 6 NOT AVBL FOR OPS",
+   "traditionalMessage": ""
+  },
+  {
+   "notamNumber": "A2351/26",
+   "facilityDesignator": "VOHS",
+   "featureName": "International",
+   "issueDate": "07/28/2026 1146",
+   "startDate": "07/29/2026 0530",
+   "endDate": "07/29/2026 0930",
+   "icaoMessage": "A2351/26 NOTAMN\r\nQ) VOMF/QMXLC/IV/BO/A/000/999/1714N07826E005\r\nA) VOHS B) 2607290530 C) 2607290930\r\nD) 0530-0930\r\nE) PORTION OF TXL K2 BTN STAND 5 AND 6 NOT AVBL FOR OPS.\r\nACFT ON STAND 7 TO PUSH BACK FACING NE ON TXL K2 AND PULL FORWARD \r\nABM STAND 8 FOR ENG START",
    "traditionalMessage": ""
   }
  ]
