@@ -1,39 +1,193 @@
 name: Update VOHS data
 
+# Refresh strategy
+# ----------------
+# Goal: detect a new METAR/SPECI within seconds, all day, every day — without
+# drowning GitHub Pages in rebuilds.
+#
+# Three constraints shape this:
+#   1. GitHub's cron floor is 5 minutes, and scheduled runs are best-effort
+#      (delayed under load, worst at :00). So cron alone cannot go faster.
+#   2. index.html loads ./data.json from Pages, so EVERY push triggers a Pages
+#      rebuild. Pages throttles around 10 builds/hour — exceed it and the site
+#      gets STALER, not fresher.
+#   3. fetch-data.js stamps `generatedAt` on every run, so a plain byte-diff on
+#      data.json is dirty every single time.
+#
+# So: schedule every 5 min (offset 1 to dodge the :00 rush), then poll
+# in-process every POLL_INTERVAL_SECONDS — but commit only when the weather or
+# NOTAM content actually moved, ignoring the generatedAt churn. Detection is
+# ~30s; pushes stay at roughly the real observation rate (~2-3/hour).
+
 on:
   push:
     branches: [main]
     paths-ignore:
       - 'data.json'
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '1-59/5 * * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: update-vohs-data
-  cancel-in-progress: false
+  cancel-in-progress: true
+
+env:
+  # How often to re-fetch within a single run. Lower = fresher, but every poll
+  # is one request to the upstream METAR/NOTAM source. See NOTES in the PR.
+  POLL_INTERVAL_SECONDS: '30'
+  # Must stay under the 5-minute cron cadence so runs never overlap themselves.
+  POLL_BUDGET_SECONDS: '260'
+  # Fields excluded when deciding "did anything really change?"
+  VOLATILE_FIELDS: 'generatedAt'
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 8
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
         with:
-          node-version: '20'
-      - name: Fetch METAR + NOTAMs
-        run: node fetch-data.js
-      - name: Commit data.json if changed
+          node-version: '22'
+
+      - name: Poll METAR + NOTAMs, push only real changes
+        shell: bash
+        env:
+          COMMIT_MSG: Update VOHS data
         run: |
-          if [[ -n "$(git status --porcelain data.json)" ]]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
+          # The runner's default shell is `bash -e`, which would abort the whole
+          # step on the first failed push. Failure handling here is explicit
+          # (retry loops, per-poll tolerance), so errexit is turned off on
+          # purpose — every error path below ends in an explicit exit.
+          set +e
+          set -uo pipefail
+          BRANCH="${GITHUB_REF_NAME}"
+
+          # Content signature that ignores the volatile timestamp fields, so a
+          # run that merely re-stamps generatedAt does not produce a commit
+          # (and therefore does not burn a GitHub Pages build).
+          sig() {
+            jq -S "del(.${VOLATILE_FIELDS})" "$1" 2>/dev/null \
+              | sha256sum | cut -d' ' -f1
+          }
+
+          head_json() {
+            git show "HEAD:data.json" > "$RUNNER_TEMP/head.json" 2>/dev/null \
+              || : > "$RUNNER_TEMP/head.json"
+            echo "$RUNNER_TEMP/head.json"
+          }
+
+          # Push, retrying through transient GitHub failures (HTTP 500 from
+          # receive-pack) and through races with any push that landed meanwhile.
+          commit_and_push() {
             git add data.json
-            git commit -m "Update VOHS data"
-            git push
+            git commit --quiet -m "$COMMIT_MSG" || return 0
+
+            local attempt
+            for attempt in 1 2 3 4 5; do
+              if git push --quiet origin "HEAD:$BRANCH"; then
+                echo "  pushed (attempt $attempt)"
+                return 0
+              fi
+              echo "  push attempt $attempt failed; re-syncing with origin/$BRANCH"
+              sleep $(( attempt * 3 ))
+
+              # Rebuild on top of whatever origin has now. data.json is
+              # regenerated wholesale each fetch, so newest simply wins — there
+              # is nothing to merge and therefore nothing to conflict.
+              cp data.json "$RUNNER_TEMP/mine.json"
+              git fetch --quiet origin "$BRANCH" || true
+              git reset --quiet --hard "origin/$BRANCH" || true
+              cp "$RUNNER_TEMP/mine.json" data.json
+
+              if [[ "$(sig data.json)" == "$(sig "$(head_json)")" ]]; then
+                echo "  origin/$BRANCH already carries this observation"
+                git checkout --quiet -- data.json || true
+                return 0
+              fi
+              git add data.json
+              git commit --quiet -m "$COMMIT_MSG" || true
+            done
+            return 1
+          }
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          polls=0; ok=0; pushes=0
+
+          while :; do
+            polls=$(( polls + 1 ))
+
+            if node fetch-data.js; then
+              ok=$(( ok + 1 ))
+
+              if ! jq -e . data.json >/dev/null 2>&1; then
+                echo "::warning::poll $polls produced invalid JSON; discarding"
+                git checkout --quiet -- data.json || true
+              elif [[ "$(sig data.json)" == "$(sig "$(head_json)")" ]]; then
+                # Only generatedAt moved. Revert so the tree stays clean and we
+                # do not trigger a pointless Pages rebuild.
+                git checkout --quiet -- data.json || true
+              else
+                echo "poll $polls: observation changed"
+                if commit_and_push; then
+                  pushes=$(( pushes + 1 ))
+                else
+                  echo "::error::push failed after 5 attempts on poll $polls"
+                  exit 1
+                fi
+              fi
+            else
+              echo "::warning::fetch-data.js failed on poll $polls; retrying next cycle"
+              git checkout --quiet -- data.json 2>/dev/null || true
+            fi
+
+            if (( SECONDS + POLL_INTERVAL_SECONDS >= POLL_BUDGET_SECONDS )); then
+              break
+            fi
+            sleep "$POLL_INTERVAL_SECONDS"
+          done
+
+          echo "polls=$polls fetched_ok=$ok pushed=$pushes"
+          {
+            echo "### VOHS refresh"
+            echo "- polls: **$polls** (every ${POLL_INTERVAL_SECONDS}s)"
+            echo "- successful fetches: **$ok**"
+            echo "- pushes: **$pushes**"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          # Fail only if every fetch failed — that means the upstream feed is
+          # down or fetch-data.js is broken, not a one-off blip.
+          if (( ok == 0 )); then
+            echo "::error::all $polls fetch attempts failed"
+            exit 1
+          fi
+
+      - name: Open or update failure issue
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          TITLE="Scheduled VOHS data update is failing"
+          RUN_URL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          BODY="Run [\`$GITHUB_RUN_ID\`]($RUN_URL) failed on \`$GITHUB_REF_NAME\` at $(date -u +'%Y-%m-%d %H:%M UTC')."
+
+          gh label create automation-failure \
+            --color B60205 --description "Automated workflow failures" 2>/dev/null || true
+
+          EXISTING=$(gh issue list --state open --label automation-failure \
+            --search "$TITLE in:title" --json number --jq '.[0].number // empty')
+
+          if [[ -n "$EXISTING" ]]; then
+            gh issue comment "$EXISTING" --body "$BODY"
           else
-            echo "No change in data.json"
+            gh issue create --title "$TITLE" --label automation-failure --body "$BODY"
           fi
