@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-10-14T12:29:16.637Z",
+ "generatedAt": "2026-10-14T17:30:37.082Z",
  "station": "VOHS",
- "metar": "METAR VOHS 141200Z 07008KT 6000 SCT020 31/16 Q1014 NOSIG",
+ "metar": "METAR VOHS 141700Z 05010KT 4000 HZ SCT020 26/19 Q1017 NOSIG",
  "notams": [],
  "notamError": "Error: NOTAM HTTP 403"
 }
